@@ -1,9 +1,5 @@
 #include <16F84A.h>
-//#device ANSI  //CCS with the ANSI declaration, is 99% compatible with ANSI-C90
-//After enabling the ANSI compiler I noticed that the "const" keyword no more meant 
-//"put this variable into program memory" but they were put into RAM instead.
-//The solution was to apply another pragma:
-//#DEVICE CONST=ROM 
+
 #fuses HS,NOWDT,NOPROTECT,NOPUT //para version de 12MHz 
 //NOPUT No Power Up Timer, tiempo de espera para estabilizacion de alimentacion
 #use delay(clock=20MHz, crystal=20MHz)//se admite internal en lugar de clock
@@ -16,17 +12,7 @@
 #include "NeoPixel.h"
 #include "irqs.h"
 #include "functions.h"
-//The RA4/T0CKI Schmitt Trigger input and an open drain output
-//Input/output or external clock input for TMR0.
-//Output is open drain type.
-//segun la formula mi Frecuencia de Reloj Externo sera de 1 Hz, el cual es dado
-//por mi boton al pulsarlo, por lo que uso RTCC_DIV_1 ya que este divide 
-//la frecuencia de entrada en 1
-//RESET_CPU(), reinicia el cpu al principio del programa pero NO borra variables
-/*Cuando se llama a la función reset_cpu () en un chip 16F, salta a la dirección 0x0000. 
-La pila es de 8 de profundidad y es circular. El puntero de pila es un contador modulo-8. 
-El valor inicial del puntero de pila al inicio de un programa no importa.
-*/
+
 void main()
 {
     set_tris_b(0x01);   //int_ext=RX
