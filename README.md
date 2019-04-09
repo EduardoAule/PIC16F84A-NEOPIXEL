@@ -63,7 +63,7 @@ el puerto serie. Esto es ideal para agregar un modulo bluetooth y con app, contr
 
     Nota: Debido a la limitada RAM (68 bytes) del PIC16F84A no es posible controlar muchos leds.
 
-##Codigo
+## Codigo
 
 La parte esensial del proyecto es la libreria Neopixel.c, la cual se encarga de enviar los valores RGB a la tira de NEOPIXELS. 
 Los colores estan repartidos en tres arrays NeoGreen[NeoPixel], NeoRed[NeoPixel] y NeoBlue[NeoPixel], setear un color a un 
