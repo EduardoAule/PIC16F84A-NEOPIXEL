@@ -9,9 +9,9 @@
 #define NUMPIXELS 5
 #include "ports.h"
 #include "vars.h"
-#include "NeoPixel.h"
-#include "irqs.h"
-#include "functions.h"
+#include "NeoPixel.c"
+#include "irqs.c"
+#include "fun.c"
 
 void main()
 {
