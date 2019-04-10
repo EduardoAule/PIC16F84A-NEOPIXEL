@@ -59,7 +59,7 @@ Para setear el color naranja, enviar en formato hexadecimal o su correspondiente
     
     ff8000+0D -> 0D = CR(Carrier Return) 
 El CR es para indicar dentro del firmware del PIC16F84A que debe procesar el color. Por lo que se espera recibir 4 bytes por 
-el puerto serie. Esto es ideal para agregar un modulo bluetooth y con app, controlar el color desde un smartphone.
+el puerto serie. Esto es ideal para agregar un modulo bluetooth y con una app, controlar el color desde un smartphone.
 
     Nota: Debido a la limitada RAM (68 bytes) del PIC16F84A no es posible controlar muchos leds.
 
