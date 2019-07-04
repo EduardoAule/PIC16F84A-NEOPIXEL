@@ -43,10 +43,10 @@ Fuente de Alimetacion.
 Se utilizan un boton (btn) PULL-DOWN para cambiar el color en los leds. El pin RX es usado para la recepcion de datos, por 
 ejemplo, se puede setear un color a traves del puerto rs-232 de una PC hacia el PIC16F84A.
 
-![esquema](https://github.com/EduardoAule/PIC16F84A-NEOPIXEL/blob/master/PIC16_Neopixels.png)
+![esquema](PIC16_Neopixels.png?raw=true "esquema")
 
 ### Caracteristicas del PIC16F84A
-![datasheet](https://github.com/EduardoAule/PIC16F84A-NEOPIXEL/blob/master/pic16f84a.png)
+![datasheet](pic16f84a.png?raw=true "esquema")
 ## Funcionamiento
 Basicamente hay dos modos de operacion, el primero es realizado por el boton, el cual solo cambia de forma uniforme el color
 de los NEOPIXEL, muestra los colores individuales del arcoiris y por ultimo un efecto RGB multicolor.
