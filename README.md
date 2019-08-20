@@ -23,7 +23,10 @@ NEOPIXEL:
 https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
 
 Requerimientos
-
+```bash
+    # determine node version
+    node --version
+```
 El lenguaje usado es C proporcionado por el compilador CCS Compiler.
 
     * CCS Compiler v5.081, (testeado también con v4.13).
